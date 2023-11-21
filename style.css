@@ -2,6 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: ghostwhite;
+  display: block;
+}
+
+main {
+  color: ghostwhite;
+  background-color: rgb(11,12,16);
+  overflow-x: hidden;
 }
 
 h1,
@@ -13,9 +26,14 @@ h2 {
   font-weight: 300;
 }
 
-span {
+.text-outline {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.2px;
+}
+
+.fullscreen {
+  height: 100vh;
+  width: 100vw;
 }
 
 .fade-in {
@@ -27,11 +45,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: ghostwhite;
   padding-left: 25%;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(11,12,16);
 }
 
 .hero-section h1 {
@@ -50,7 +64,7 @@ span {
   padding: 1%;
   background-color: rgb(31, 31, 37);
   border-radius: 2px;
-  animation: fade-in 2s 2s ease-in forwards;
+  animation: fade-in 2s 1.5s ease-in forwards;
   opacity: 0;
 }
 
@@ -66,9 +80,7 @@ span {
 }
 
 .run {
-  color: ghostwhite;
   font-size: larger;
-  padding: 1% 2%;
   width: 10vw;
   background-color: rgb(11,12,16);
   border: 2px solid ghostwhite;
@@ -77,11 +89,67 @@ span {
   opacity: 0;
 }
 
-.run:hover {
+.run a {
+  padding: 8% 5%;
+}
+
+.run a:hover {
   color: rgb(11,12,16);
   background-color: ghostwhite;
   cursor: pointer;
   transition: all 0.3s linear;
+}
+
+.sections {
+  padding: 0 25%;
+}
+
+.sections h2 {
+  text-align: center;
+  font-size: 2em;
+  padding: 2% 0;
+}
+
+.keys {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 2em;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 40% 40%;
+  height: 70%;
+  margin-top: 5%;;
+}
+
+.key a {
+  display: block;
+  height: 30vh;
+  padding-left: 20px;
+  font-family: "Kanit", sans-serif;
+  font-size: 3em;
+  border: 2px solid ghostwhite;
+  border-radius: 5px;
+  box-shadow: 0 15px rgb(82, 82, 86);
+}
+
+.key a:hover {
+  color: rgb(11,12,16);
+  background-color: ghostwhite;
+  animation: fade-in 0.2s ease-in forwards;
+}
+
+.key a:active {
+  box-shadow: 0 6px rgb(60, 60, 63);
+  transform: translateY(4px);
+}
+
+.key a span {
+  color: transparent;
+}
+
+.key a:hover span {
+  color: black;
 }
   
 @keyframes typing {
