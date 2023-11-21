@@ -32,12 +32,12 @@ span {
 
 .hero-section h1 {
   font-size: 5em;
-  background-color: green;
+  /*background-color: green;*/
 }
 
 .hero-section h2 {
   font-size: 3em;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .hello-world {
