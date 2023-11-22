@@ -182,6 +182,7 @@ h2 {
 
 .form-input::placeholder {
   color: ghostwhite;
+  opacity: 0.5;
 }
 
 .submit-button {
@@ -200,6 +201,21 @@ h2 {
   background-color: ghostwhite;
   animation: fade-in 0.2s ease-in forwards;
   cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  color: ghostwhite;
+  margin: 5% auto;
+  width: 50%;
+}
+
+i:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.8px;
+  text-shadow: 2px 2px 17px rgba(248,248,255,0.56);
 }
   
 @keyframes typing {
