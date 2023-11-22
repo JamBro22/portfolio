@@ -14,6 +14,7 @@
   </head>
   <body>
     <main>
+      <!-- HERO SECTION - START -->
       <div class="hero-section fullscreen">
         <h1 class="fade-in">
           Jamie Brown <span class="text-outline">Portfolio</span>
@@ -24,15 +25,68 @@
         </div>
         <button class="run"><a href="#sections">Run</a></button>
       </div>
+      <!-- HERO SECTION - END -->
+
+      <!-- OPTIONS SECTION - START -->
       <div id="sections" class="sections fullscreen">
         <h2>Hello World!</h2>
         <div class="keys">
-          <div class="key"><a href="">A<span>bout Me</span></a></div>
-          <div class="key"><a href="/portfolio/assets/CV - JAMIE BROWN.pdf">R<span>esume</span></a></div>
-          <div class="key"><a href="">P<span>rojects</span></a></div>
-          <div class="key"><a href="">C<span>ontact</span></a></div>
+          <div class="key">
+            <a href="">A<span>bout Me</span></a>
+          </div>
+          <div class="key">
+            <a href="/portfolio/assets/CV - JAMIE BROWN.pdf"
+              >R<span>esume</span></a
+            >
+          </div>
+          <div class="key">
+            <a href="">P<span>rojects</span></a>
+          </div>
+          <div class="key">
+            <a href="#contact-form">C<span>ontact Me</span></a>
+          </div>
         </div>
       </div>
+      <!-- OPTIONS SECTION - END -->
+
+      <!-- CONTACT FORM - START -->
+      <form
+        id="contact-form"
+        class="contact-form fullscreen"
+        action="https://formspree.io/f/mzblqlkd"
+        method="POST"
+      >
+        <h2 class="heading-2">Contact Me</h2>
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="form-input"
+          type="text"
+          name="organisation"
+          placeholder="Organisation"
+          required
+        />
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="form-input"
+          name="message"
+          placeholder="Message"
+          rows="10"
+        ></textarea>
+        <button class="submit-button" type="submit">Send</button>
+      </form>
+      <!-- CONTACT FORM - END -->
     </main>
   </body>
 </html>
