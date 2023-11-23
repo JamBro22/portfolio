@@ -221,12 +221,6 @@ h3 {
   font-size: small;
 }
 
-.arrow-up {
-  background-color: red;
-  height: 30px;
-  width: 30px;
-}
-
 .projects-section {
   display: flex;
   flex-direction: column;
