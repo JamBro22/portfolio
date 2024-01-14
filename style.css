@@ -418,6 +418,29 @@ nav ul li a:active {
   }
 
   .intro-info p {
-    padding: 2% 0;
+    padding: 5% 0;
+  }
+
+  .projects-section {
+    height: auto;
+  }
+
+  .project-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .project-item {
+    margin: 5% 0;
+  }
+
+  .project-item img {
+    margin-bottom: 2em;
+  }
+
+  .project-item p {
+    padding: 2em;
   }
 }
