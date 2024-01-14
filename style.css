@@ -443,4 +443,8 @@ nav ul li a:active {
   .project-item p {
     padding: 2em;
   }
+
+  .icons {
+    width: 90%;
+  }
 }
