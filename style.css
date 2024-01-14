@@ -266,9 +266,14 @@ nav ul li a:active {
 
 .skills {
   display: flex;
+  flex-direction: column;
   font-family: "Kanit", sans-serif;
   font-size: larger;
   align-items: center;
+}
+
+.skills h3 {
+  margin: 6% 0;
 }
 
 .skills label {
@@ -424,6 +429,15 @@ nav ul li a:active {
   .projects-section {
     height: auto;
     padding: 0 15%;
+  }
+
+  .skills label {
+    margin: 0;
+  }
+
+  .skills i {
+    margin-left: 0;
+    margin-right: 5px;
   }
 
   .project-items {
