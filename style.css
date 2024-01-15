@@ -59,15 +59,21 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 25%;
+  align-items: center;
 }
 
-.hero-section h1 {
+.hero-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-section div h1 {
   font-size: 5em;
 }
 
-.hero-section h2 {
+.hero-section div h2 {
   font-size: 3em;
   transform: translateY(-30px);
 }
@@ -75,8 +81,7 @@ h3 {
 .hello-world {
   font-family: Consolas, "Courier New", sans-serif;
   font-size: 1.5em;
-  margin: 2% 0 1% 0;
-  padding: 1%;
+  margin: 20px 0 20px 0;
   background-color: rgb(31, 31, 37);
   border-radius: 2px;
   animation: fade-in 2s 1.5s ease-in forwards;
@@ -96,7 +101,7 @@ h3 {
 
 .run {
   font-size: larger;
-  width: 10vw;
+  width: 200px;
   background-color: rgb(11, 12, 16);
   border: 2px solid ghostwhite;
   border-radius: 2px;
@@ -105,7 +110,7 @@ h3 {
 }
 
 .run a {
-  padding: 8% 5%;
+  padding: 20px 10px;
 }
 
 .run a:hover {
@@ -424,13 +429,29 @@ nav ul li a:active {
   .intro-info p {
     padding: 5% 0;
   }
-  
+
   .projects-section {
     height: 60vh;
   }
 }
 
 @media only screen and (max-width: 992px) {
+  .hero-section div {
+    padding: 0 10%;
+  }
+
+  .hero-section div h1 {
+    font-size: 3em;
+  }
+  
+  .hero-section div h2 {
+    font-size: 1em;
+    transform: translateY(0px);
+  }
+
+  .hello-world {
+    font-size: 1em;
+  }
 
   .projects-section {
     height: auto;
