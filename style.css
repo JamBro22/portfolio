@@ -415,6 +415,19 @@ nav ul li a:active {
 }
 
 @media only screen and (max-width: 1200px) {
+
+  .sections {
+    padding: 0 10%;
+  }
+
+  .key a {
+    padding: 10%;
+  }
+
+  .key a span {
+    color: ghostwhite;
+  }
+
   .intro {
     flex-direction: column;
     flex-wrap: wrap;
@@ -436,6 +449,21 @@ nav ul li a:active {
 }
 
 @media only screen and (max-width: 992px) {
+  .sections {
+    height: auto;
+    padding-bottom: 5%;
+  }
+
+  .keys {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .key a {
+    font-size: 2em;
+  }
+
   .hero-section div {
     padding: 0 10%;
   }
