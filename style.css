@@ -266,7 +266,6 @@ nav ul li a:active {
 
 .skills {
   display: flex;
-  flex-direction: column;
   font-family: "Kanit", sans-serif;
   font-size: larger;
   align-items: center;
@@ -410,7 +409,7 @@ nav ul li a:active {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .intro {
     flex-direction: column;
     flex-wrap: wrap;
@@ -425,10 +424,21 @@ nav ul li a:active {
   .intro-info p {
     padding: 5% 0;
   }
+  
+  .projects-section {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 992px) {
 
   .projects-section {
     height: auto;
     padding: 0 15%;
+  }
+
+  .skills {
+    flex-direction: column;
   }
 
   .skills label {
